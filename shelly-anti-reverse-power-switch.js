@@ -1,11 +1,11 @@
-// Switch off relay if sending solar power to grid is higher than maxNegativePower Watts
+// Switch off relay if sending solar power to grid is higher than 0 W
 
 let CONFIG = {
-  maxNegativePower: 20, // in W
+  maxNegativePower: 10, // in W
   statusCounter: 5, // number of events before switch off relay
   urlSwitch: "http://192.168.2.8/rpc/switch.set",
-  switchId: 3,
-  toggleTime: 5, // in seconds
+  switchId: 0,
+  toggleTime: 5, // 5 sec
 };
 
 let counter = 0;
